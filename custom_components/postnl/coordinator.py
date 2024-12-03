@@ -26,7 +26,7 @@ class PostNLCoordinator(DataUpdateCoordinator):
             hass,
             _LOGGER,
             name="PostNL",
-            update_interval=timedelta(seconds=90),
+            update_interval=timedelta(seconds=900),
         )
 
     async def _async_update_data(self) -> dict[str, list[Package]]:
